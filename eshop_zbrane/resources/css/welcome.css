@@ -1,0 +1,640 @@
+/* Resetování základních vlastností */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Základní styly pro košík */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+}
+
+.cart-table img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.remove-item {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.remove-item:hover {
+    text-decoration: underline;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+:root {
+    --primary-color: #8e8b6f;
+    --primary-hover: #a3a380;
+    --text-color: #fff;
+    --text-muted: #c0c0c0;
+    --background-dark: #333;
+    --background-light: #222;
+}
+
+/* Základní styl pro všechny sekce */
+body, button, h1, h2, p, .product-name{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+h1, .product-title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Sekce Welcome */
+.welcome-body {
+    font-family: "Protest Strike", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../public/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.welcome-button {
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.welcome-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Sekce Produktů */
+.Popular_product-section {
+    padding: 50px;
+    background-color: var(--background-dark);
+    text-align: center;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.product-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8e8b6f;
+    margin: 15px auto 0;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: var(--background-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-width: 100px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.product-image {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.add-to-cart_Btn {
+    display: flex;
+    justify-content: left;
+    background-color: #8e8b6f;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s;
+}
+
+
+
+.add-to-cart_Btn:hover {
+    background-color: #a3a380;
+}
+/* Konec druhé sekce CSS!!! */
+
+
+/* Začátek třetí sekce CSS */
+.New_products-section {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+}
+
+.new-product-title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.new-product-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8e8b6f;
+    margin: 15px auto 0;
+}
+
+.new-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.new-product-card {
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    min-width: 150px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.new-product-image {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.new-product-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.new-product-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.new-product-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+.product-description {
+    color: var(--text-muted);
+    font-size: 15px;
+    text-align: left;
+}
+
+.new-product-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.add-to-cart_Btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: left;
+}
+
+.add-to-cart_Btn:hover {
+    background-color: var(--primary-hover);
+}
+
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #111;
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* konec třetí sekce CSS!!! */
+
+/* O nás sekce CSS!!! */
+.about-us-section {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.about-title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8e8b6f;
+    margin: 15px auto 0;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 25px;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us-image {
+    flex: 1; 
+    max-width: 500px; 
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-us-text {
+    color: #fff;
+    margin-left: 20px;
+    flex: 1; 
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-us-text h3 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-us-text p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+/* Konec sekce o nás */
+
+/* Čtvrtá sekce ZNAČKY */
+.brands-section {
+    padding: 50px;
+    background-color: #333;
+    text-align: center;
+}
+
+.brands-title {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.brands-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #8e8b6f;
+    margin: 15px auto 0;
+}
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #4CAF50; /* Zelené pozadí */
+    color: white;
+}
+
+.alert-danger {
+    background-color: #f44336; /* Červené pozadí pro error */
+    color: white;
+}
+.brands-container {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    width: 100%;       
+    padding: 40px;    
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.brand-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/* Začátek Kontakt sekce */
+
+.contact-map {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 50px;
+}
+
+.contact-infotmation {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #8e8b6f;
+    flex-direction: column;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 75px;
+}
+
+.menu li a {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.contact-menu {
+    list-style-type: none;
+}
+
+.contact-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact_information-title {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact_ContactUS-title {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact-info .icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    width: 110px;
+    padding-bottom: 20px;
+}
+
+.social-icons i {
+    color: #111;
+}
+
+.contact-button {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s; 
+}
+
+.post-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.post-card {
+    background-color: white;
+    border: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 150px; 
+    height: 80px;
+    box-sizing: border-box; 
+    border-radius: 8px;
+}
+
+.post-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.footer {
+    background-color: #222;
+    padding: 20px;
+}
+
+.footer h1 {
+    text-align: center;
+    color: #a3a380;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+/* Media Queries pro responzivitu */
+
+/* Tablety - střední obrazovky */
+@media (max-width: 992px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+    .welcome-subtitle {
+        font-size: 20px;
+    }
+    .welcome-button {
+        padding: 8px 30px;
+        font-size: 16px;
+    }
+    .product-title {
+        font-size: 2rem;
+    }
+    .product-card {
+        min-width: 150px;
+        max-width: 180px;
+    }
+}
+
+/* Mobilní telefony - malé obrazovky */
+@media (max-width: 768px) {
+    .welcome-body {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    .welcome-subtitle {
+        font-size: 18px;
+    }
+    .welcome-button {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .product-title {
+        font-size: 1.8rem;
+    }
+    .product-grid {
+        flex-direction: column;
+    }
+    .product-card {
+        width: 90%;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,51 @@
+.product-title {
+    color: #333;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    padding: 35px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.new-product-card {
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    min-width: 150px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.product-description, .product-price {
+    color: #fff;
+}
+
+.add-to-cart_Btn {
+    background-color: #8e8b6f;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
