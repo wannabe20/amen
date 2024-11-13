@@ -1,12 +1,12 @@
 @extends('layout')
 
-@vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/layout.css', 'resources/css/Knives.css'])
+@vite(['resources/css/welcome.css', 'resources/css/app.css', 'resources/js/app.js', 'resources/css/layout.css', 'resources/css/Knives.css'])
 
 @section('content')
     <h2 class="product-title">Seznam zbraní</h2>
 
     @if(!empty($guns) && count($guns) > 0)
-        <div class="product-grid">
+        <div class="new-product-grid">
             @foreach($guns as $gun)
                 <div class="new-product-card">
                     <img src="{{ asset('images/guns/' . $gun->image) }}" alt="{{ $gun->name }}" class="product-image">

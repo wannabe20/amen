@@ -36,7 +36,7 @@
 
     <!-- Druhá sekce kde jsou populární zbraně -->
     <section class="Popular_product-section">
-        <h2 class="product-title">POPULÁRNÍ ZBRANĚ</h2>
+        <h2 class="new-product-title">POPULÁRNÍ ZBRANĚ</h2>
         <div class="new-product-grid">
             <div class="new-product-card">
                 <div class="product-image">
